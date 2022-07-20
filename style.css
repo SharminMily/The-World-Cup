@@ -1,0 +1,271 @@
+/* --- google font --- */
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ /* --- body styles start --- */
+body {
+	font-family: Heebo;
+}
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+/* --- headerr styles start --- */
+.header {
+	height: 85vh;
+	background-color: #0e0225;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	margin-top: 7vh;
+	margin-bottom: 7.5vh;
+	
+}
+.header-info{
+	width: 50%;
+	color: white;
+	margin-left: 4em;
+}
+.header-info h1{
+	font-size: 3em;
+	font-weight: 50px;
+}
+.header-info p{
+	font-size: 15px;
+	font-weight: 400;
+	margin: 1em 0;
+}
+.header-btn a{
+	text-decoration: none;	
+	color: white;
+	border-color: none;
+}
+.header-btn{    
+	font-size: 18px;
+	padding: 10px 15px ;
+	margin-top: 20px;
+	border: none;
+	border-radius: 8px;
+	background-color: #ff0932;
+	display: flex;
+	justify-items: center;
+}
+.header-img{
+	position: relative;
+	height: 100%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+}
+.header-img img{
+	position: relative;
+	bottom:0;
+	width: 70%;
+}
+/* --- header styles End --- */
+    /* --------- */
+/* --- main styles start --- */
+main{
+	display: flex;
+	justify-content: center;
+}
+.All-main{
+	max-width: 1110px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	margin: 2em 0;
+}
+/* nav styles start  */
+nav{
+   padding: 0 30px;	
+   background-color: #0e0225;
+   border-radius : 25px;
+   width: 310px;
+   height: 350px;
+   top: 2222px;
+}
+nav ul li a{
+	font-size: 23px;
+	font-weight: 950;
+	text-decoration: none;
+	color: black;
+}
+nav ul li{
+	width: 215px;
+	height: 65px;
+	margin: 40px 0;
+	padding: 17px 0;
+	list-style: none;
+	text-align: center;
+	border-radius: 8px;	
+	background-color: white;
+}
+.li-btn {
+	background-color: #ff0932;
+}
+/* nav styles End  */
+
+/* --- blogs styles start --- */
+.blogs{
+	margin-left: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.blog{
+	box-shadow: 1px 1px 15px rgb(87, 85, 85);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.blog-img img{
+	width: 100%;
+}
+.blog-info{
+	padding: 15px;
+	background-color: rgb(251, 248, 248);
+}
+.blog-btn{
+	border: 1px solid #161616;
+	padding: 5px 15px;
+    border-radius: 5px;
+	background-color: transparent;
+}
+.blog-btn a{
+	Font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #161616;
+}
+.blog-title{
+	margin: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.blog-icon, .blog-icon img{
+	display: flex;
+	align-items: center;
+}
+.blog-icon img{
+	margin-right: 10px;
+}
+.blog-duration{
+	margin-right: 2em;
+}
+/* --- blogs styles End --- */
+/* --- main styles End --- */
+ /* --- body styles End --- */
+/* --- footer styles start --- */
+footer{
+	background-color:rgb(1, 2, 14);
+	padding: 2em 6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer h1{	
+	margin: 2em 0;
+	color: rgb(196, 187, 187);
+}	
+hr{
+	width: 100%;
+	border: none;
+	height: 1px;
+	background-color: rgb(134, 129, 129);
+}
+.footer-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2em 0;
+}
+.footer-links li{
+	list-style: none;
+	margin: 1em;
+}
+.footer-links li a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #b4adad;
+	letter-spacing: 1px;
+}
+.sm-icons i{
+	font-size: 20px;
+	padding: .8rem;
+	margin: .5em;
+	color: rgb(230, 233, 245);
+}
+.sm-icons p{
+	border: dotted rgb(143, 129, 129);
+ color: rgb(146, 135, 135);
+ padding: 1em 4.5em;
+}
+/* --- footer styles End --- */
+
+/* --- media query style start--- */
+ 
+/*-- media query for 577px to 768px -- */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+
+	.header-info{
+		width: 40%;
+	}
+	.banner-title {
+		font-size: 2em;
+	}
+	.header-text>p{
+		font-size: 14px;
+		height: 47px;
+		overflow: hidden;
+
+	}
+	.header-img img{
+		width: 60%;
+	}
+	.All-main {
+		grid-template-columns: 1fr;
+	    justify-content: center;
+	}
+	
+	.nav {
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	
+	.nav ul {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	
+	.nav ul li {
+		width: 150px;
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.nav ul li a{
+		font-size: 14px;
+	}
+	.blogs {
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+		padding: 20px;
+	}
+	.sm-icons {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+    .sm-icons p{
+		display: grid;
+		grid-template-columns: min-content;
+	}
+}
+
+/* --- media query style End--- */
